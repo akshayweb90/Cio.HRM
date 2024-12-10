@@ -15,15 +15,15 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class LoginPageStepDefination extends PageAction {
-	public static WebDriver driver=null;
+	//public static WebDriver driver=null;
 	PageObjectManger pageObjectManger;
 	public LoginPageStepDefination(){
-		
+		startDriver();
 		pageObjectManger=new PageObjectManger(driver);
 	}
 	@Given("user is on login Page")
 	public void user_is_on_login_page()   {
-		startDriver();
+		
 		pageObjectManger.getLoginPage().hitUrl();
 }
 	@When("User gives the credential")

@@ -15,7 +15,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class PageAction {
 	//public WebDriver =new Ste
-	static WebDriver   driver;
+	protected static WebDriver   driver;
 	PageObjectManger pageObjectManger;
 	static WebDriverWait wait;
 	public PageAction(){
