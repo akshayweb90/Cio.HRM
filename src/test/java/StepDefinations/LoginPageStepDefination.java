@@ -15,7 +15,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class LoginPageStepDefination extends PageAction {
-	//public static WebDriver driver=null;
+	
 	PageObjectManger pageObjectManger;
 	public LoginPageStepDefination(){
 		startDriver();
@@ -36,34 +36,28 @@ public class LoginPageStepDefination extends PageAction {
 	}
 	@When("User click om logout button")
 	public void user_click_om_logout_button() {
-		driver.findElement(By.xpath("//i[@class=\"oxd-icon bi-caret-down-fill oxd-userdropdown-icon\"]")).click();
+		getElement(By.xpath("//i[@class=\"oxd-icon bi-caret-down-fill oxd-userdropdown-icon\"]")).click();
 }
 
 	@Then("user is logged out")
 	public void user_is_logged_out() {
-		driver.findElement(By.xpath("//a[contains(text(),'Logout')]")).click();
-		Boolean LoginPageIcon=driver.findElement(By.xpath("//h5")).isDisplayed();
+		getElement("//a[contains(text(),'Logout')]").click();
+		Boolean LoginPageIcon=getElement(By.xpath("//h5")).isDisplayed();
 		assertTrue(LoginPageIcon);
 	}
 	@Then("^user enters(.*)and(.*)$")
 	public void user_enters_akshay_and_gadhave(String username,String passward) {
-		WebElement username1=driver.findElement(By.xpath("//input[@name=\"username\"]"));
+		WebElement username1=getElement("//input[@name=\"username\"]");
 		username1.sendKeys(username);
-		WebElement Passward1=driver.findElement(By.xpath("//input[@name=\"password\"]"));
+		WebElement Passward1=getElement(By.xpath("//input[@name=\"password\"]"));
 		Passward1.sendKeys(passward);
-		driver.findElement(By.xpath("//button[@class='oxd-button oxd-button--medium oxd-button--main orangehrm-login-button']")).click();
+		getElement("//button[@class='oxd-button oxd-button--medium oxd-button--main orangehrm-login-button']").click();
 	}
 
 	@Then("invalid credential sms should displayed")
 	public void invalid_credential_sms_should_displayed() {
 
 	}
-
-//	@After
-//	public void teardown() {
-//		driver.close();
-//		System.out.print("closed");
-//	}
 
 
 

@@ -11,13 +11,13 @@ public class LoginPage extends PageAction {
 	}
 	//String applicationUrl="https://www.youtube.com/";
 	//String applicationUrl="https://www.javatpoint.com/collections-in-java";
-	String applicationUrl="http://orangehrm.qedgetech.com/symfony/web/index.php/auth/login";
+	String applicationUrl="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
 	String user1="Admin";
 	String correctpassword="admin123";
 
-	String userName="//input[@name='username']";
-	String password="//input[@name='password']";
-	String logInButton="//button[@class='oxd-button oxd-button--medium oxd-button--main orangehrm-login-button']";
+	String userName="//input[@placeholder='Username']";
+	String password="//input[@placeholder='Password']";
+	String logInButton="//button[@type='submit']";
 
 
 	public void hitUrl()  {
