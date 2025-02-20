@@ -8,8 +8,8 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 		features={"src\\test\\resources\\feature"},
 		glue = "StepDefinations"
-
-		,tags="@HRM"
+        //,dryRun=true
+        ,tags="@HRM"
 
 		)
 public class MyRunner extends  AbstractTestNGCucumberTests  {

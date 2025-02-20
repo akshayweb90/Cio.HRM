@@ -1,14 +1,15 @@
+@HRM
 Feature: Login page
 
-  @HRM
+  Background: 
+    Given I am in backGround
+
   Scenario: Login to orangeHRM
     Given user is on login Page
     When User gives the credential
     Then user is on dashboard
 
-  @HRM
   Scenario: Login to orangeHRM
     Given user is on login Page
     When User gives the credential
     Then user is on dashboard
-  

@@ -40,23 +40,18 @@
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-java</artifactId>
-			<version>6.11.0</version>
+			<version>7.21.1</version>
 		</dependency>
 
 
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-jvm-deps -->
-		<dependency>
-			<groupId>io.cucumber</groupId>
-			<artifactId>cucumber-jvm-deps</artifactId>
-			<version>1.0.6</version>
-			
-		</dependency>
+	
 
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-testng</artifactId>
-			<version>6.11.0</version>
+			<version>7.15.0</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
@@ -84,12 +79,7 @@
 
 
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
-		<dependency>
-			<groupId>org.testng</groupId>
-			<artifactId>testng</artifactId>
-			<version>7.4.0</version>
-			
-		</dependency>
+		
 		<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-nop -->
 <dependency>
     <groupId>org.slf4j</groupId>

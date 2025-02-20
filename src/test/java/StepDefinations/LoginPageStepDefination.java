@@ -16,6 +16,11 @@ import io.cucumber.java.en.When;
 
 public class LoginPageStepDefination extends PageAction {
 	
+	@Given("I am in backGround")
+	public void i_am_in_back_ground() {
+	    System.out.println("i am in background");
+	}
+	
 	PageObjectManger pageObjectManger;
 	public LoginPageStepDefination(){
 		startDriver();
@@ -32,7 +37,7 @@ public class LoginPageStepDefination extends PageAction {
 	}
 	@Then("user is on dashboard")
 	public void user_is_on_dashboard() {
-		
+		pageObjectManger.getHomePage().validateUserIsOnDasBoard();
 	}
 	@When("User click om logout button")
 	public void user_click_om_logout_button() {
